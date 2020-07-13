@@ -15,6 +15,8 @@
 		965906A024BC504F00DAEDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9659069E24BC504F00DAEDA2 /* LaunchScreen.storyboard */; };
 		965906AB24BC505000DAEDA2 /* travel_diaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965906AA24BC505000DAEDA2 /* travel_diaryTests.swift */; };
 		965906B624BC505000DAEDA2 /* travel_diaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965906B524BC505000DAEDA2 /* travel_diaryUITests.swift */; };
+		965906C624BC9DAD00DAEDA2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965906C524BC9DAD00DAEDA2 /* DetailViewController.swift */; };
+		965906C824BCA04600DAEDA2 /* UIRoundPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965906C724BCA04600DAEDA2 /* UIRoundPrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		965906B124BC505000DAEDA2 /* travel_diaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = travel_diaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965906B524BC505000DAEDA2 /* travel_diaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_diaryUITests.swift; sourceTree = "<group>"; };
 		965906B724BC505000DAEDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965906C524BC9DAD00DAEDA2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		965906C724BCA04600DAEDA2 /* UIRoundPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundPrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				9659069324BC504D00DAEDA2 /* AppDelegate.swift */,
+				965906C524BC9DAD00DAEDA2 /* DetailViewController.swift */,
 				9659069524BC504D00DAEDA2 /* SceneDelegate.swift */,
 				9659069724BC504D00DAEDA2 /* ViewController.swift */,
 				9659069924BC504D00DAEDA2 /* Main.storyboard */,
+				965906C724BCA04600DAEDA2 /* UIRoundPrimaryButton.swift */,
 				9659069C24BC504F00DAEDA2 /* Assets.xcassets */,
 				9659069E24BC504F00DAEDA2 /* LaunchScreen.storyboard */,
 				965906A124BC504F00DAEDA2 /* Info.plist */,
@@ -262,6 +268,8 @@
 				9659069824BC504D00DAEDA2 /* ViewController.swift in Sources */,
 				9659069424BC504D00DAEDA2 /* AppDelegate.swift in Sources */,
 				9659069624BC504D00DAEDA2 /* SceneDelegate.swift in Sources */,
+				965906C624BC9DAD00DAEDA2 /* DetailViewController.swift in Sources */,
+				965906C824BCA04600DAEDA2 /* UIRoundPrimaryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

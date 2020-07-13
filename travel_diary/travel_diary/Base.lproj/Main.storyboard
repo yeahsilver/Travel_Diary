@@ -11,14 +11,13 @@
         <!--Albums-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="travel_diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lPT-Rz-zJT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lPT-Rz-zJT">
+                                <rect key="frame" x="0.0" y="171" width="414" height="642"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="axx-cI-m9L">
                                     <size key="itemSize" width="200" height="350"/>
@@ -36,6 +35,9 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.07.13 ~ 2020.07.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3a-Ls-Chl">
                                                     <rect key="frame" x="15" y="280" width="170" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="Yek-LX-k3a"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -56,6 +58,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="A3a-Ls-Chl" secondAttribute="trailing" constant="15" id="1Vy-zd-eAP"/>
                                                 <constraint firstItem="58p-eP-IQY" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="5" id="9Em-Ck-VxF"/>
+                                                <constraint firstAttribute="bottom" secondItem="58p-eP-IQY" secondAttribute="bottom" constant="20" id="CRM-lZ-joQ"/>
                                                 <constraint firstItem="A3a-Ls-Chl" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="15" id="P58-Ea-JBy"/>
                                                 <constraint firstAttribute="trailing" secondItem="Elr-tj-lqk" secondAttribute="trailing" constant="10" id="PTb-zo-xgc"/>
                                                 <constraint firstItem="Elr-tj-lqk" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="10" id="cvi-Xs-AR1"/>
@@ -77,22 +80,40 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jjx-pO-ufs"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-Zj-m7k" customClass="UIRoundPrimaryButton" customModule="travel_diary" customModuleProvider="target">
+                                <rect key="frame" x="20" y="69" width="374" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="새로운 포토북 생성">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPT-Rz-zJT" secondAttribute="bottom" id="4Kz-vS-C2y"/>
+                            <constraint firstItem="HaJ-Zj-m7k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="APY-BO-SzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HaJ-Zj-m7k" secondAttribute="trailing" constant="20" id="CC1-rE-Bwh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPT-Rz-zJT" secondAttribute="trailing" id="GX9-u9-Je2"/>
-                            <constraint firstItem="lPT-Rz-zJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GwM-uo-Hnv"/>
+                            <constraint firstItem="lPT-Rz-zJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="GwM-uo-Hnv"/>
+                            <constraint firstItem="HaJ-Zj-m7k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="a0z-QE-ASM"/>
                             <constraint firstItem="lPT-Rz-zJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bO6-NX-IbM"/>
+                            <constraint firstItem="lPT-Rz-zJT" firstAttribute="top" secondItem="HaJ-Zj-m7k" secondAttribute="bottom" constant="25" id="o3d-Ap-ZAr"/>
+                            <constraint firstItem="HaJ-Zj-m7k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zj4-9h-u2H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zj4-9h-u2H"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Albums" image="camera.on.rectangle.fill" catalog="system" id="Yqh-6q-5hZ">
                         <color key="badgeColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="-22"/>
+            <point key="canvasLocation" x="1108.6956521739132" y="-22.098214285714285"/>
         </scene>
         <!--Settings-->
         <scene sceneID="qd9-x3-5k0">
@@ -116,6 +137,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GWf-EM-aUT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8WJ-DA-XXn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
