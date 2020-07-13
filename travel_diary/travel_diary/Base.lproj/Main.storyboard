@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GWf-EM-aUT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Albums-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="travel_diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lPT-Rz-zJT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="axx-cI-m9L">
+                                    <size key="itemSize" width="200" height="350"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="0Rf-GK-FVt" customClass="GridCell" customModule="travel_diary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rh4-VN-rXQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.07.13 ~ 2020.07.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3a-Ls-Chl">
+                                                    <rect key="frame" x="15" y="280" width="170" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="travel in Seoul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58p-eP-IQY">
+                                                    <rect key="frame" x="0.0" y="309" width="205" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Elr-tj-lqk">
+                                                    <rect key="frame" x="10" y="0.0" width="180" height="266.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Elr-tj-lqk" secondAttribute="height" multiplier="3:4" id="3la-Vw-9st"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="A3a-Ls-Chl" secondAttribute="trailing" constant="15" id="1Vy-zd-eAP"/>
+                                                <constraint firstItem="58p-eP-IQY" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="5" id="9Em-Ck-VxF"/>
+                                                <constraint firstItem="A3a-Ls-Chl" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="15" id="P58-Ea-JBy"/>
+                                                <constraint firstAttribute="trailing" secondItem="Elr-tj-lqk" secondAttribute="trailing" constant="10" id="PTb-zo-xgc"/>
+                                                <constraint firstItem="Elr-tj-lqk" firstAttribute="leading" secondItem="Rh4-VN-rXQ" secondAttribute="leading" constant="10" id="cvi-Xs-AR1"/>
+                                                <constraint firstAttribute="trailing" secondItem="58p-eP-IQY" secondAttribute="trailing" constant="5" id="g0j-VG-cbz"/>
+                                                <constraint firstItem="A3a-Ls-Chl" firstAttribute="top" secondItem="Elr-tj-lqk" secondAttribute="bottom" constant="30" id="pA8-L6-2EA"/>
+                                                <constraint firstItem="Elr-tj-lqk" firstAttribute="top" secondItem="Rh4-VN-rXQ" secondAttribute="top" constant="10" id="sZ6-CS-VvE"/>
+                                                <constraint firstItem="58p-eP-IQY" firstAttribute="top" secondItem="A3a-Ls-Chl" secondAttribute="bottom" constant="10" id="znQ-5L-vwv"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="A3a-Ls-Chl" id="ehU-OJ-Vg2"/>
+                                            <outlet property="imgView" destination="Elr-tj-lqk" id="8tv-vF-T2C"/>
+                                            <outlet property="titleLabel" destination="58p-eP-IQY" id="mK9-O2-IbL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FNq-Sq-VWi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jjx-pO-ufs"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPT-Rz-zJT" secondAttribute="bottom" id="4Kz-vS-C2y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPT-Rz-zJT" secondAttribute="trailing" id="GX9-u9-Je2"/>
+                            <constraint firstItem="lPT-Rz-zJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GwM-uo-Hnv"/>
+                            <constraint firstItem="lPT-Rz-zJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bO6-NX-IbM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Albums" image="camera.on.rectangle.fill" catalog="system" id="Yqh-6q-5hZ">
+                        <color key="badgeColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1109" y="-22"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="qd9-x3-5k0">
+            <objects>
+                <viewController id="ZI5-5J-Iii" customClass="ViewController" customModule="travel_diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f6e-ur-GrS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="L14-gE-oR9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="pUV-xS-jfg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOe-WH-SRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="732"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hw5-CO-Dhw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GWf-EM-aUT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8WJ-DA-XXn">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="IzE-tL-bkN"/>
+                        <segue destination="ZI5-5J-Iii" kind="relationship" relationship="viewControllers" id="Jh8-4g-c85"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnE-Cf-Kra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>
