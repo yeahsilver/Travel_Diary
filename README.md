@@ -1,5 +1,4 @@
 #  ✈️ Travel Diary
-<br/>
 <img width="300" alt="스크린샷 2020-07-13 오후 10 12 55" src="https://user-images.githubusercontent.com/39258902/87314900-c8855380-c55e-11ea-8718-896fefab8133.png">
 <br/>
 
