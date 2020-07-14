@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-
-    let viewModel = InfoViewModel()
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
+    let viewModel = InfoViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     // UICollectionViewDataSource
@@ -54,6 +53,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         return CGSize(width: width, height: height)
     }
+    
 }
 
 class GridCell: UICollectionViewCell{
