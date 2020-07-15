@@ -12,10 +12,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     let viewModel = InfoViewModel()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // UICollectionViewDataSource
     // > 보여주는 이미지 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

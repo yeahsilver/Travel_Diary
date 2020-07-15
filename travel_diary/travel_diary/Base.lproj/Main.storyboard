@@ -97,10 +97,29 @@
                     <tabBarItem key="tabBarItem" title="Albums" image="camera.on.rectangle.fill" catalog="system" id="Yqh-6q-5hZ">
                         <color key="badgeColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <segue destination="jEa-Rj-r9Q" kind="show" identifier="showAlbum" id="dp0-aS-E9X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108.6956521739132" y="-22.098214285714285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="FCb-Bb-QxS">
+            <objects>
+                <viewController id="jEa-Rj-r9Q" customClass="DetailViewController" customModule="travel_diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGJ-4K-641">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="03M-x0-YsD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O04-gb-OgN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOL-x9-aTk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="-22.098214285714285"/>
         </scene>
         <!--Settings-->
         <scene sceneID="qd9-x3-5k0">
