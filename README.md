@@ -23,6 +23,7 @@
 
 - Xcode -> Swift
 - SQLite
+- Firebase
 
 <br/>
 
@@ -54,3 +55,4 @@
 
 ## 🗞  Reference Lists
 - [UIPageViewController](https://www.youtube.com/watch?v=hIMRn_LdvOg)
+- [Firebase Login](https://www.youtube.com/watch?v=ife5YK-Keng)
