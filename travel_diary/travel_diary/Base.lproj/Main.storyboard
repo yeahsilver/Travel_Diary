@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GWf-EM-aUT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GWf-EM-aUT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -80,17 +80,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jjx-pO-ufs"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-App-40x40" translatesAutoresizingMaskIntoConstraints="NO" id="YAu-Zm-7Uw">
-                                <rect key="frame" x="175" y="52" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-App-40x40" translatesAutoresizingMaskIntoConstraints="NO" id="YAu-Zm-7Uw">
+                                <rect key="frame" x="150" y="49" width="114" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="VH7-hs-epI"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osl-hK-y7I">
+                                <rect key="frame" x="361" y="78" width="25" height="23"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="rectangle.stack.badge.plus" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPT-Rz-zJT" secondAttribute="bottom" id="4Kz-vS-C2y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="osl-hK-y7I" secondAttribute="trailing" constant="28" id="G7y-O0-3Hn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YAu-Zm-7Uw" secondAttribute="trailing" constant="150" id="GFF-DA-XJz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPT-Rz-zJT" secondAttribute="trailing" id="GX9-u9-Je2"/>
                             <constraint firstItem="lPT-Rz-zJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="GwM-uo-Hnv"/>
+                            <constraint firstItem="YAu-Zm-7Uw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ppa-h4-UjJ"/>
+                            <constraint firstItem="osl-hK-y7I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="RHM-Kg-XSe"/>
+                            <constraint firstItem="osl-hK-y7I" firstAttribute="leading" secondItem="YAu-Zm-7Uw" secondAttribute="trailing" constant="97" id="Vsv-Ja-LJc"/>
                             <constraint firstItem="lPT-Rz-zJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bO6-NX-IbM"/>
+                            <constraint firstItem="YAu-Zm-7Uw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="jzH-Ui-7Rh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -162,5 +175,6 @@
         <image name="Icon-App-40x40" width="40" height="40"/>
         <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="rectangle.stack.badge.plus" catalog="system" width="128" height="115"/>
     </resources>
 </document>
